@@ -1,2 +1,5 @@
 # Pytorch-NLP-papers-implementation
-GIVE ME MERCY
+some frame
+some paper
+some little demo 
+
