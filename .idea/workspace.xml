@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9c3aaf1-a98c-4658-9b74-cca37a6bb9af" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pytorch-tutorial/Seq2Seq_translation.py" afterPath="$PROJECT_DIR$/pytorch-tutorial/Seq2Seq_translation.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py" afterPath="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,10 +30,23 @@
       <file leaf-file-name="WordEmbedding-Ngram.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+            <state relative-caret-position="389">
+              <caret line="110" column="47" lean-forward="true" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
               <folding>
                 <element signature="e#74#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordEmbedding-CBOW.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-CBOW.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#184#196#0" expanded="true" />
+                <element signature="e#987#1074#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -57,6 +69,7 @@
       <list>
         <option value="$PROJECT_DIR$/pytorch-tutorial/Seq2Seq_translation.py" />
         <option value="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding.py" />
+        <option value="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-CBOW.py" />
         <option value="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py" />
       </list>
     </option>
@@ -153,6 +166,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Pytorch-NLP-papers-implementation" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="WordEmbedding-CBOW" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytorch-tutorial" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pytorch-NLP-papers-implementation" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-CBOW.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -291,12 +321,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.WordEmbedding-Ngram" />
+      <item index="1" class="java.lang.String" itemvalue="Python.WordEmbedding-CBOW" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.WordEmbedding-Ngram" />
+        <item index="1" class="java.lang.String" itemvalue="Python.WordEmbedding-CBOW" />
       </list>
     </recent_temporary>
   </component>
@@ -340,7 +372,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-CBOW.py</url>
+          <line>18</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -352,10 +392,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-CBOW.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#184#196#0" expanded="true" />
+            <element signature="e#987#1074#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pytorch-tutorial/WordEmbedding-Ngram.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="101" column="39" lean-forward="true" selection-start-line="101" selection-start-column="39" selection-end-line="101" selection-end-column="39" />
+        <state relative-caret-position="389">
+          <caret line="110" column="47" lean-forward="true" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
           <folding>
             <element signature="e#74#86#0" expanded="true" />
           </folding>

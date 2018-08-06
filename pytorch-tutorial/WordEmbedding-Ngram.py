@@ -10,7 +10,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-
+import torch.autograd as autograd
 torch.manual_seed(1)
 
 class NGramLanguageModeler(nn.Module):
@@ -26,7 +26,7 @@ class NGramLanguageModeler(nn.Module):
         out = F.relu(self.linear1(embeds))
         out = self.linear2(out)
         log_probs = F.log_softmax(out, dim=1)
-        return log_probs
+        return log_probs,self.embeddings
 
 CONTEXT_SIZE = 2
 EMBEDDING_DIM = 10
@@ -77,7 +77,7 @@ for epoch in range(10):
 
         # Step 3. Run the forward pass, getting log probabilities over next
         # words
-        log_probs = model(context_idxs)
+        log_probs,embedd = model(context_idxs)
 
         # Step 4. Compute your loss function. (Again, Torch wants the target
         # word wrapped in a tensor)
@@ -94,11 +94,18 @@ print(losses)  # The loss decreased every iteration over the training data!
 
 test = ['When','forty']
 context_idxs = torch.tensor([word_to_ix[w] for w in test], dtype=torch.long)
-out = model(context_idxs) #modelu最后rutuen的是字典中各个字符的概率
+out,embedd = model(context_idxs) #model最后ruturn的是字典中各个字符的概率
 print(out)
 maxprob, predict_label = torch.max(out, 1)#maxprob为最大的概率值，predict_label为最大概率值所在的位置
 print(maxprob)
 print(predict_label)
 print(predict_label.item())#获取tensor中的数字
 predict_word = idx_to_word[predict_label.item()]
+print('预测结果')
 print(predict_word)
+print('词向量矩阵')
+print(embedd)
+print('输出特定次的词向量矩阵')
+lookup_tensor = torch.LongTensor([0])
+print(idx_to_word[0])
+print(embedd(autograd.Variable(lookup_tensor)))
