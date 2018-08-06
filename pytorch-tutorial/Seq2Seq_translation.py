@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jul  5 14:33:31 2018
-python3
+python3。5
+pytorch 
 @author: mxshen
 Seq2Seq Translation 
 DataStructure:
