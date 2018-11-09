@@ -63,7 +63,6 @@ class Document(object):
         self.length = 0
         # 把整个文档及真的单词构成vocabulary（不允许重复）
 
-
 class DataPreProcessing(object):
     def __init__(self):
         self.docs_count = 0
@@ -77,7 +76,6 @@ class DataPreProcessing(object):
         with codecs.open(wordidmapfile, 'w', 'utf-8') as f:
             for word, id in self.word2id.items():
                 f.write(word + "\t" + str(id) + "\n")
-
 
 class LDAModel(object):
     def __init__(self, dpre):
@@ -189,11 +187,11 @@ class LDAModel(object):
         self.save()
 
     def _theta(self):
-        for i in xrange(self.dpre.docs_count):  # 遍历文档的个数词
+        for i in range(self.dpre.docs_count):  # 遍历文档的个数词
             self.theta[i] = (self.nd[i] + self.alpha) / (self.ndsum[i] + self.K * self.alpha)
 
     def _phi(self):
-        for i in xrange(self.K):
+        for i in range(self.K):
             self.phi[i] = (self.nw.T[i] + self.beta) / (self.nwsum[i] + self.dpre.words_count * self.beta)
 
     def save(self):
@@ -284,3 +282,6 @@ def run():
 
 if __name__ == '__main__':
     run()
+
+
+import gensim.models.ldamodel
